@@ -15,11 +15,13 @@ class PostHogActivity : AppCompatActivity() {
     @SuppressLint("SetTextI18n")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
         binding = ActivityPostHogBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         runBlocking {
             PostHog.with(this@PostHogActivity).reloadFeatureFlags()
+
         }
 
         binding.txtFlagStatus.text =
