@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<defaults>
+  <entry>
+    <key>first_key</key>
+    <value>Hi</value>
+  </entry>
+</defaults>

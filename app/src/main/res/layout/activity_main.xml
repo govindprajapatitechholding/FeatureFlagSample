@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        tools:context=".MainActivity">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnLaunchDarkly"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="LaunchDarkly"
+                android:textAllCaps="false"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnSplit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Split"
+                android:textAllCaps="false"
+                app:layout_constraintEnd_toEndOf="@+id/btnLaunchDarkly"
+                app:layout_constraintStart_toStartOf="@+id/btnLaunchDarkly"
+                app:layout_constraintTop_toBottomOf="@+id/btnLaunchDarkly" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnFirebaseConfig"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Firebase Config"
+                android:textAllCaps="false"
+                app:layout_constraintEnd_toEndOf="@+id/btnSplit"
+                app:layout_constraintStart_toStartOf="@+id/btnSplit"
+                app:layout_constraintTop_toBottomOf="@+id/btnSplit" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnConfigCat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Config Cat"
+                android:textAllCaps="false"
+                app:layout_constraintEnd_toEndOf="@+id/btnFirebaseConfig"
+                app:layout_constraintStart_toStartOf="@+id/btnFirebaseConfig"
+                app:layout_constraintTop_toBottomOf="@+id/btnFirebaseConfig" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnFlagSmith"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Flag Smith"
+                android:textAllCaps="false"
+                app:layout_constraintEnd_toEndOf="@+id/btnConfigCat"
+                app:layout_constraintStart_toStartOf="@+id/btnConfigCat"
+                app:layout_constraintTop_toBottomOf="@+id/btnConfigCat" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnOptimizely"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Optimizely"
+                android:textAllCaps="false"
+                app:layout_constraintEnd_toEndOf="@+id/btnFlagSmith"
+                app:layout_constraintStart_toStartOf="@+id/btnFlagSmith"
+                app:layout_constraintTop_toBottomOf="@+id/btnFlagSmith" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnApptimize"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Apptimize"
+                android:textAllCaps="false"
+                app:layout_constraintEnd_toEndOf="@+id/btnOptimizely"
+                app:layout_constraintStart_toStartOf="@+id/btnOptimizely"
+                app:layout_constraintTop_toBottomOf="@+id/btnOptimizely" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnPostHog"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="PostHog"
+                android:textAllCaps="false"
+                app:layout_constraintEnd_toEndOf="@+id/btnApptimize"
+                app:layout_constraintStart_toStartOf="@+id/btnApptimize"
+                app:layout_constraintTop_toBottomOf="@+id/btnApptimize" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</layout>
